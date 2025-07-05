@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooking Partners - Omnifood</title>
+  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <style>
+    .partners-container {
+      max-width: 900px;
+      margin: 4rem auto;
+      background: #fff;
+      border-radius: 11px;
+      box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+      padding: 4rem 3rem;
+      font-size: 1.7rem;
+      color: #333;
+    }
+    .partners-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .partners-header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2.4rem;
+      margin-top: 2.4rem;
+    }
+    .partner-card {
+      background: #fdf2e9;
+      border-radius: 9px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 1.2rem 2.4rem rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .partner-card:hover {
+      box-shadow: 0 2.4rem 4.8rem rgba(230,126,34,0.10);
+      transform: translateY(-4px) scale(1.03);
+    }
+    .partner-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .partner-name {
+      font-weight: 600;
+      color: #e67e22;
+      margin-bottom: 0.3rem;
+      font-size: 1.3rem;
+    }
+    .partner-desc {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 0.8rem;
+    }
+    .partner-details {
+      font-size: 1.1rem;
+      color: #767676;
+      margin-bottom: 1.2rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 2.4rem auto 0 auto;
+      text-align: center;
+      color: #e67e22;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid #e67e22;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: #cf711f;
+      border-bottom: 1px solid #cf711f;
+    }
+    .join-form-section {
+      margin-top: 4rem;
+      background: #fdf2e9;
+      border-radius: 9px;
+      padding: 2.4rem 2rem;
+      box-shadow: 0 1.2rem 2.4rem rgba(0,0,0,0.04);
+    }
+    .join-form-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      color: #e67e22;
+      text-align: center;
+    }
+    .join-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .join-form label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.2rem;
+    }
+    .join-form input, .join-form textarea {
+      padding: 0.8rem 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 7px;
+      font-size: 1.1rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    .join-form textarea {
+      min-height: 60px;
+      max-height: 180px;
+    }
+    .join-form button {
+      background: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      padding: 1rem 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 0.8rem;
+      transition: background 0.2s;
+    }
+    .join-form button:hover {
+      background: #cf711f;
+    }
+    .join-success {
+      background: #51cf66;
+      color: #fff;
+      padding: 1.2rem;
+      border-radius: 7px;
+      text-align: center;
+      margin-top: 1.2rem;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html">
+      <img class="logo" alt="Omnifood logo" src="omnifood-logo.png" />
+    </a>
+  </header>
+  <main>
+    <div class="partners-container">
+      <div class="partners-header">
+        <h1>Cooking Partners</h1>
+        <p>Omnifood collaborates with top chefs, restaurants, and local producers to bring you the best meals every day.</p>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <img src="images/handsome-businessman-with-women-standing-working-cafe.jpg"Green Spoon" class="partner-logo" />
+          <div class="partner-name">Green Spoon</div>
+          <div class="partner-desc">Farm-to-table restaurant specializing in organic, seasonal produce.</div>
+          <div class="partner-details">Location: San Francisco, CA<br>Contact: info@greenspoon.com<br>Website: <a href="#" target="_blank">greenspoon.com</a></div>
+        </div>
+        <div class="partner-card">
+          <img src="images/handsome-men-restaurant.jpg" alt="Urban Eats" class="partner-logo" />
+          <div class="partner-name">Urban Eats</div>
+          <div class="partner-desc">Modern bistro known for creative, healthy meals and sustainable sourcing.</div>
+          <div class="partner-details">Location: New York, NY<br>Contact: hello@urbaneats.com<br>Website: <a href="#" target="_blank">urbaneats.com</a></div>
+        </div>
+        <div class="partner-card">
+          <img src="images/handsome-restaurant-manager-is-talking-waitresses-about-work-process.jpg" alt="Chef's Collective" class="partner-logo" />
+          <div class="partner-name">Chef's Collective</div>
+          <div class="partner-desc">A group of award-winning chefs crafting exclusive recipes for Omnifood.</div>
+          <div class="partner-details">Location: Los Angeles, CA<br>Contact: partners@chefscollective.com<br>Website: <a href="#" target="_blank">chefscollective.com</a></div>
+        </div>
+        <div class="partner-card">
+          <img src="images/waiting-order.jpg" alt="Local Harvest" class="partner-logo" />
+          <div class="partner-name">Local Harvest</div>
+          <div class="partner-desc">Local producers providing fresh, organic ingredients daily.</div>
+          <div class="partner-details">Location: Portland, OR<br>Contact: support@localharvest.com<br>Website: <a href="#" target="_blank">localharvest.com</a></div>
+        </div>
+      </div>
+      <div class="join-form-section">
+        <h2>Become a Cooking Partner</h2>
+        <form class="join-form" id="join-partner-form">
+          <label for="partner-name">Your Name or Business Name *</label>
+          <input type="text" id="partner-name" name="partner-name" required />
+          <label for="partner-email">Email Address *</label>
+          <input type="email" id="partner-email" name="partner-email" required />
+          <label for="partner-message">Tell us about your business or experience *</label>
+          <textarea id="partner-message" name="partner-message" required></textarea>
+          <button type="submit">Request Partnership</button>
+        </form>
+        <div id="join-success-message" class="join-success" style="display:none;">Thank you for your interest! We will contact you soon.</div>
+      </div>
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+  </main>
+  <script>
+    // Real-time join form
+    document.addEventListener('DOMContentLoaded', function() {
+      const joinForm = document.getElementById('join-partner-form');
+      const successMsg = document.getElementById('join-success-message');
+      if (joinForm) {
+        joinForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          joinForm.style.display = 'none';
+          successMsg.style.display = 'block';
+        });
+      }
+    });
+  </script>
+</body>
+</html> 

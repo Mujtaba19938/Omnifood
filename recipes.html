@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Recipes - Omnifood</title>
+  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <style>
+    .recipes-container {
+      max-width: 1100px;
+      margin: 4rem auto;
+      background: #fff;
+      border-radius: 11px;
+      box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+      padding: 4rem 3rem;
+    }
+    .recipes-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2.4rem;
+    }
+    .recipe-card {
+      background: #fdf2e9;
+      border-radius: 9px;
+      box-shadow: 0 1.2rem 2.4rem rgba(0,0,0,0.04);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .recipe-card:hover {
+      box-shadow: 0 2.4rem 4.8rem rgba(230,126,34,0.10);
+      transform: translateY(-4px) scale(1.03);
+    }
+    .recipe-img {
+      width: 100%;
+      max-width: 180px;
+      border-radius: 7px;
+      margin-bottom: 1.2rem;
+    }
+    .recipe-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      color: #e67e22;
+      text-align: center;
+    }
+    .recipe-desc {
+      font-size: 1.3rem;
+      color: #555;
+      text-align: center;
+      margin-bottom: 1.2rem;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 2.4rem auto 0 auto;
+      text-align: center;
+      color: #e67e22;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid #e67e22;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: #cf711f;
+      border-bottom: 1px solid #cf711f;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html">
+      <img class="logo" alt="Omnifood logo" src="omnifood-logo.png" />
+    </a>
+  </header>
+  <main>
+    <div class="recipes-container">
+      <div class="recipes-header">
+        <h1 class="heading-primary">All Recipes</h1>
+        <p>Discover more delicious, healthy meals curated by Omnifood!</p>
+      </div>
+      <div class="recipes-grid">
+        <div class="recipe-card">
+          <img src="meal-1.jpg" alt="Japanese Gyozas" class="recipe-img" />
+          <div class="recipe-title">Japanese Gyozas</div>
+          <div class="recipe-desc">Vegetarian dumplings with a savory filling, served with soy dipping sauce.</div>
+        </div>
+        <div class="recipe-card">
+          <img src="meal-2.jpg" alt="Avocado Salad" class="recipe-img" />
+          <div class="recipe-title">Avocado Salad</div>
+          <div class="recipe-desc">Fresh avocado, cherry tomatoes, and greens tossed in a lemon vinaigrette.</div>
+        </div>
+        <div class="recipe-card">
+          <img src="gallery-1.jpg" alt="Pasta Primavera" class="recipe-img" />
+          <div class="recipe-title">Pasta Primavera</div>
+          <div class="recipe-desc">Whole wheat pasta with seasonal vegetables and a light olive oil sauce.</div>
+        </div>
+        <div class="recipe-card">
+          <img src="gallery-2.jpg" alt="Grilled Salmon" class="recipe-img" />
+          <div class="recipe-title">Grilled Salmon</div>
+          <div class="recipe-desc">Salmon fillet grilled to perfection, served with quinoa and steamed broccoli.</div>
+        </div>
+        <div class="recipe-card">
+          <img src="gallery-3.jpg" alt="Vegan Buddha Bowl" class="recipe-img" />
+          <div class="recipe-title">Vegan Buddha Bowl</div>
+          <div class="recipe-desc">A nourishing bowl of grains, greens, chickpeas, and tahini dressing.</div>
+        </div>
+        <div class="recipe-card">
+          <img src="gallery-4.jpg" alt="Chicken Stir Fry" class="recipe-img" />
+          <div class="recipe-title">Chicken Stir Fry</div>
+          <div class="recipe-desc">Lean chicken breast with colorful veggies in a ginger-soy sauce.</div>
+        </div>
+        <div class="recipe-card">
+          <img src="gallery-5.jpg" alt="Berry Oatmeal" class="recipe-img" />
+          <div class="recipe-title">Berry Oatmeal</div>
+          <div class="recipe-desc">Hearty oats topped with fresh berries and a drizzle of honey.</div>
+        </div>
+        <div class="recipe-card">
+          <img src="gallery-6.jpg" alt="Quinoa Salad" class="recipe-img" />
+          <div class="recipe-title">Quinoa Salad</div>
+          <div class="recipe-desc">Protein-packed quinoa with roasted vegetables and feta cheese.</div>
+        </div>
+      </div>
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </div>
+  </main>
+</body>
+</html> 
